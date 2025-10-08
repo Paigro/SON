@@ -52,7 +52,6 @@ public class volumeCrossFade : MonoBehaviour
         auxAudioSource.Play();
         for (float t = 0; t < lap; t += laps)
         {
-            Debug.Log(1 - Mathf.Sqrt((lap - t) / lap));
             mainAudioSource.volume = Mathf.Lerp(1, 0, 1 - Mathf.Sqrt((lap - t) / lap)); // Fade out.
             auxAudioSource.volume = Mathf.Lerp(0, 1, Mathf.Sqrt(t / lap)); // Fade in.
             yield return new WaitForSecondsRealtime(laps);
