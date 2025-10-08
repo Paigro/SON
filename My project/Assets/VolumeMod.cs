@@ -1,12 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
+// Andres Garcia Navarro.
+// Pablo Iglesias Rodrigo.
+// Hoja 4 ejercicio 1.
+
 using UnityEngine;
+
 
 public class VolumeMod : MonoBehaviour
 {
 
     [SerializeField] AudioSource audio;
     [SerializeField] float volumeMod = 0.05f;
+    [SerializeField] float intervalTime = 2;
 
     // Start is called before the first frame update
     void Start()

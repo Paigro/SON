@@ -1,8 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
+// Andres Garcia Navarro.
+// Pablo Iglesias Rodrigo.
+// Hoja 4 ejercicio 2.
+
 using UnityEngine;
+
 
 public class volumeFadeOut : MonoBehaviour
 {
