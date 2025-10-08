@@ -666,7 +666,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &676032376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1144,13 +1144,14 @@ GameObject:
   - component: {fileID: 1247182851}
   - component: {fileID: 1247182850}
   - component: {fileID: 1247182849}
+  - component: {fileID: 1247182854}
   m_Layer: 0
   m_Name: Smooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1247182849
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1333,6 +1334,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1247182854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1247182848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdd92241cc65e8540bc93ac2e47577a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 1247182849}
+  intervalTime: 2
 --- !u!1 &1846359072
 GameObject:
   m_ObjectHideFlags: 0
