@@ -36,7 +36,7 @@ public class volumeFadeOut : MonoBehaviour
                 isFadingOut = true;
             }
         }
-        // Para 
+        // Para resetear el volumne.
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
             audio.volume = 1;
@@ -44,8 +44,6 @@ public class volumeFadeOut : MonoBehaviour
 
         if (isFadingOut)
         {
-            //Debug.Log("fding.");
-            //Debug.Log(volumeMod);
             if (audio.volume <= 0)
             {
                 Debug.Log("End.");

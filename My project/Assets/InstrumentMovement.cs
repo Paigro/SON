@@ -1,17 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InstrumentMovement : MonoBehaviour
 {
-    public float distancia = 10;
-    float contador = 0;
-    bool vuelta = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    [SerializeField] private float distancia = 10;
+    [SerializeField] private float contador = 0;
+    [SerializeField] private bool vuelta = false;
 
     // Update is called once per frame
     void Update()

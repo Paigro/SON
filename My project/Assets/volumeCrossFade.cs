@@ -13,8 +13,8 @@ public class volumeCrossFade : MonoBehaviour
     [SerializeField] AudioClip[] audioClips;
 
     [SerializeField] float lap = 6;
-    bool isFading = false;
 
+    private bool isFading = false;
 
     // Start is called before the first frame update
     void Start()

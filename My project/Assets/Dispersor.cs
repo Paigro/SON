@@ -8,69 +8,66 @@ using UnityEngine;
 
 public class Dispersor : MonoBehaviour
 {
-    [SerializeField] private int polifonia; // Numero de Audio Sources para crear.
-    [Range(0f, 30f)] public float minTime, maxTime; // Interavalo de lanzamiento.
-    [Range(0f, 1f)] public float minVol, maxVol; // Volumen minimo y mximo de lnmiento.
-    [SerializeField] private float pitchVar;
-    [SerializeField] private string ruta;
+    [SerializeField] private int polifonia = 5; // Numero de Audio Sources para crear.
+    [Range(0f, 30f)] public float minTime = 5, maxTime = 10; // Interavalo de lanzamiento.
+    [Range(0f, 1f)] public float minVol = 0.2f, maxVol = 0.8f; // Volumen minimo y mximo del lanmiento.
+    [Range(-1f, 1f)] public float minPan = -0.5f, maxPan = 0.5f; // Paneo aleatorio del lanzamiento.
+    [SerializeField] private float pitchVar = 0.05f; // Variacion en el pitch.
 
-    public AudioClip[] audioClips;
-    public List<AudioSource> channels;
+    [SerializeField] private string ruta; // Ruta para carga los audios.
 
-    private void Awake()
-    {
-        // Crear los Audio Sources.
-        channels = new List<AudioSource>(polifonia);
-        for (int i = 0; i < polifonia; i++)
-        {
-            AudioSource source = gameObject.AddComponent<AudioSource>();
-            channels.Add(source);
-        }
-        // Cargar los audios de resources.
-        audioClips = Resources.LoadAll<AudioClip>("Sounds/ciudad");
-    }
+    public AudioClip[] audioClips; // Lista de clips de audio cargados de resources.
+    public List<AudioSource> canales; // Lista de los canales de audio.
+
 
     private void Start()
     {
+        // Crear los Audio Sources segun la polifonia.
+        canales = new List<AudioSource>(polifonia);
+        for (int i = 0; i < polifonia; i++)
+        {
+            AudioSource source = gameObject.AddComponent<AudioSource>();
+            canales.Add(source);
+        }
+        // Cargar los audios de resources.
+        audioClips = Resources.LoadAll<AudioClip>(ruta);
+        // Inicializamos todos los canales de audio.
         for (int i = 0; i < polifonia; i++)
         {
             PlaySound();
         }
     }
-    
+
     IEnumerator Waitforit(AudioSource audioSource)
     {
-        // tiempo de espera aleatorio en el intervalo [minTime,maxTime]
+        // Tiempo de espera aleatorio en el intervalo [minTime,maxTime].
         float waitTime = Random.Range(minTime, maxTime);
-        Debug.Log(waitTime);
 
-        // miramos si hay un clip asignado al source (sirve para la primera vez q se ejecuta)
+        // Miramos si hay un clip asignado al source (sirve para la primera vez q se ejecuta)
         if (audioSource.clip == null)
-            // waitfor seconds suspende la coroutine durante waitTime
+            // Waitfor seconds suspende la coroutine durante waitTime.
             yield return new WaitForSeconds(waitTime);
 
-        // cuando hay clip se añade la long del clip + el tiempo de espera para esperar entre lanzamientos
+        // Cuando hay clip se mete la longitud del clip + el tiempo de espera para esperar entre lanzamientos.
         else
             yield return new WaitForSeconds(audioSource.clip.length + waitTime);
 
-        // si esta activado reproducimos sonido
+        // Si esta activado reproducimos sonido.
         PlaySound();
     }
 
     void PlaySound()
     {
         int i = 0;
-        bool fount = false;
-        while (i < channels.Count && !fount)
+        bool found = false;
+        while (i < canales.Count && !found)
         {
-            if (!channels[i].isPlaying)
+            if (!canales[i].isPlaying)
             {
-                fount = true;
-                SetSourceProperties(channels[i], audioClips[Random.Range(0, audioClips.Length)]);
-                channels[i].Play();
-                Debug.Log("back in it");
-                StartCoroutine(Waitforit(channels[i]));
-                break;
+                found = true;
+                SetSourceProperties(canales[i], audioClips[Random.Range(0, audioClips.Length)]);
+                canales[i].Play();
+                StartCoroutine(Waitforit(canales[i]));
             }
             i++;
         }
@@ -78,9 +75,20 @@ public class Dispersor : MonoBehaviour
 
     public void SetSourceProperties(AudioSource audioSource, AudioClip audioData)
     {
-        audioSource.loop = false;
-        audioSource.clip = audioData;
-        audioSource.volume = Random.Range(minVol, maxVol);
-        audioSource.pitch = Random.Range(1 - pitchVar, 1 + pitchVar);
+        audioSource.loop = false; // No queremos loop.
+        audioSource.clip = audioData; // Le ponemos el clip al audioSource.
+        audioSource.volume = Random.Range(minVol, maxVol); // Le ponemos el volumen entre el rango.
+        audioSource.panStereo = Random.Range(minPan, maxPan); // Lo mismo con el paneo.
+        audioSource.pitch = Random.Range(1 - pitchVar, 1 + pitchVar); // Lo mismo con el pitch.
+    }
+
+    public void SetStats(string path, int poly, float minT, float maxT, float minV, float maxV, float minP, float maxP, float pitchV)
+    {
+        ruta = path;
+        polifonia = poly;
+        minTime = minT; maxTime = maxT;
+        minVol = minV; maxVol = maxV;
+        minPan = minP; maxPan = maxP;
+        pitchVar = pitchV;
     }
 }

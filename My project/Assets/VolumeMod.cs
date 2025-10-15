@@ -7,16 +7,9 @@ using UnityEngine;
 
 public class VolumeMod : MonoBehaviour
 {
-
     [SerializeField] AudioSource audio;
     [SerializeField] float volumeMod = 0.05f;
     [SerializeField] float intervalTime = 2;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
@@ -35,6 +28,5 @@ public class VolumeMod : MonoBehaviour
                 audio.volume += volumeMod;
             }
         }
-
     }
 }
