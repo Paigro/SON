@@ -7,14 +7,10 @@ public class SchedEvent : MonoBehaviour
 {
     private AudioSource head;
     private AudioSource tail;
-    //public AudioClip sound01, sound02;
     public AudioClip[] pcmDataHeads, pcmDataTails;
     private int nHeads, nTails;
     // Intervalo temporal.
-    [SerializeField]
-    private float lap;
-
-
+    [SerializeField] private float lap;
 
     void Awake()
     {
@@ -26,6 +22,7 @@ public class SchedEvent : MonoBehaviour
 
     void Start()
     {
+        // Heads:
         for (int i = 0; i < nHeads; i++)
         {
             if (pcmDataHeads[i].channels > 1)
@@ -45,6 +42,7 @@ public class SchedEvent : MonoBehaviour
             applyFadeOut(data, nSamplesLap);
             pcmDataHeads[i].SetData(data, 0);
         }
+        // Tails:
         for (int i = 0; i < nTails; i++)
         {
             if (pcmDataHeads[i].channels > 1)
@@ -71,7 +69,7 @@ public class SchedEvent : MonoBehaviour
         for (int i = 0; i < lapSample; i++)
         {
             int ic = (samples.Length - lapSample) + i;
-            samples[i] = samples[i] * Mathf.Sqrt(i / lapSample);
+            samples[ic] = samples[ic] * Mathf.Sqrt(t / lapSample);
             t += lap / lapSample;
         }
     }
@@ -81,12 +79,10 @@ public class SchedEvent : MonoBehaviour
         for (int i = 0; i < lapSample; i++)
         {
             int ic = (samples.Length - lapSample) + i;
-            samples[ic] = samples[ic] * Mathf.Sqrt((lapSample - i) / lapSample);
-            t+= lap/lapSample;
+            samples[ic] = samples[ic] * Mathf.Sqrt((lapSample - t) / lapSample);
+            t += lap / lapSample;
         }
     }
-
-
 
     // Update is called once per frame
     void Update()
