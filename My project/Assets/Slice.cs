@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class SchedEvent : MonoBehaviour
 {
-    private AudioSource head;
-    private AudioSource tail;
-    public AudioClip[] pcmDataHeads, pcmDataTails;
-    private int nHeads, nTails;
-    // Intervalo temporal.
-    [SerializeField] private float lap;
+    private AudioSource head; // Para reproducir los heads.
+    private AudioSource tail; // Para reproducir los tail.
+    public AudioClip[] pcmDataHeads; // Clips de audio de heads.
+    public AudioClip[] pcmDataTails; // Clips de audio de tails.
+    private int nHeads; // Numero de heads.
+    private int nTails; // Numero de tails.
+    [SerializeField] private float lap; // Intervalo temporal.
 
     void Awake()
     {
@@ -25,42 +26,50 @@ public class SchedEvent : MonoBehaviour
         // Heads:
         for (int i = 0; i < nHeads; i++)
         {
+            // Error si el audio no es MONO.
             if (pcmDataHeads[i].channels > 1)
             {
                 Debug.LogError("NO ES MONO");
                 continue;
             }
+
             int nSamplesLap = (int)(pcmDataHeads[i].frequency * lap);
             var nSamples = pcmDataHeads[i].samples;
             var data = new float[nSamples];
+
+            // Error si la duracion del lap es mayor a la del clip.
             if (nSamplesLap > nSamples)
             {
                 Debug.LogError("EL LAP ES MAYOR QUE EL CLIP");
                 continue;
             }
-            pcmDataHeads[i].GetData(data, 0);
-            applyFadeOut(data, nSamplesLap);
-            pcmDataHeads[i].SetData(data, 0);
+            pcmDataHeads[i].GetData(data, 0); // Cogemos los samples.
+            applyFadeOut(data, nSamplesLap); // Les aplicamos el FadeOut.
+            pcmDataHeads[i].SetData(data, 0); // Ponemos los nuevos samples en el clip.
         }
         // Tails:
         for (int i = 0; i < nTails; i++)
         {
+            // Error si el audio no es MONO.
             if (pcmDataHeads[i].channels > 1)
             {
                 Debug.LogError("NO ES MONO");
                 continue;
             }
+
             int nSamplesLap = (int)(pcmDataHeads[i].frequency * lap);
             var nSamples = pcmDataHeads[i].samples;
             var data = new float[nSamples];
+
+            // Error si la duracion del lap es mayor a la del clip.
             if (nSamplesLap > nSamples)
             {
                 Debug.LogError("EL LAP ES MAYOR QUE EL CLIP");
                 continue;
             }
-            pcmDataHeads[i].GetData(data, 0);
-            applyFadeIn(data, nSamplesLap);
-            pcmDataHeads[i].SetData(data, 0);
+            pcmDataHeads[i].GetData(data, 0); // Cogemos los samples.
+            applyFadeIn(data, nSamplesLap); // Les aplicamos el FadeIn.
+            pcmDataHeads[i].SetData(data, 0); // Ponemos los nuevos samples en el clip.
         }
     }
     private void applyFadeIn(float[] samples, int lapSample)
@@ -73,6 +82,7 @@ public class SchedEvent : MonoBehaviour
             t += lap / lapSample;
         }
     }
+
     private void applyFadeOut(float[] samples, int lapSample)
     {
         float t = 0;
