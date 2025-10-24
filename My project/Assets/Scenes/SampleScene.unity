@@ -1123,6 +1123,11 @@ MonoBehaviour:
   pcmDataTails:
   - {fileID: 8300000, guid: 7a80183710961154785d8c5d0629ac8d, type: 3}
   - {fileID: 8300000, guid: aa949ff219de0b4458372b30ea842a5e, type: 3}
+  pcmDataCasing:
+  - {fileID: 8300000, guid: 5f7a90b9f22004243acefb04cc61d8aa, type: 3}
+  - {fileID: 8300000, guid: 61a7b0ddff90ff3418857d4e587dc1c0, type: 3}
+  - {fileID: 8300000, guid: 79285e3954767d04bbeb98969e8de8b7, type: 3}
+  - {fileID: 8300000, guid: bd445dbb1f2eacd49837d5cb2aeff1f3, type: 3}
   lap: 0.01
 --- !u!4 &962529293
 Transform:
