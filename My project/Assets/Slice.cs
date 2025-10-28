@@ -43,7 +43,6 @@ public class SchedEvent : MonoBehaviour
 
             int nSamples = pcmDataHeads[i].samples;
             int nSamplesLap = (int)(pcmDataHeads[i].frequency * lap);
-            float[] data = new float[nSamples];
 
             // Error si la duracion del lap es mayor a la del clip.
             if (nSamplesLap > nSamples)
@@ -51,9 +50,11 @@ public class SchedEvent : MonoBehaviour
                 Debug.LogError("EL LAP DE HEAD ES MAYOR QUE EL CLIP");
                 continue;
             }
-            pcmDataHeads[i].GetData(data, 0); // Cogemos los samples.
+            int offset = (nSamples - nSamplesLap);
+            float[] data = new float[nSamplesLap];
+            pcmDataHeads[i].GetData(data, offset); // Cogemos los samples.
             applyFadeOut(data, nSamplesLap); // Les aplicamos el FadeOut.
-            pcmDataHeads[i].SetData(data, 0); // Ponemos los nuevos samples en el clip.
+            pcmDataHeads[i].SetData(data, offset); // Ponemos los nuevos samples en el clip.
         }
         // Tails:
         for (int i = 0; i < nTails; i++)
@@ -65,8 +66,8 @@ public class SchedEvent : MonoBehaviour
                 continue;
             }
 
-            int nSamples = pcmDataHeads[i].samples;
-            int nSamplesLap = (int)(pcmDataHeads[i].frequency * lap);
+            int nSamples = pcmDataTails[i].samples;
+            int nSamplesLap = (int)(pcmDataTails[i].frequency * lap);
             float[] data = new float[nSamples];
 
             // Error si la duracion del lap es mayor a la del clip.
@@ -96,8 +97,7 @@ public class SchedEvent : MonoBehaviour
         float t = 0;
         for (int i = 0; i < lapSample; i++)
         {
-            int ic = (samples.Length - lapSample) + i;
-            samples[ic] = samples[ic] * Mathf.Sqrt((lapSample - t) / lapSample);
+            samples[i] = samples[i] * Mathf.Sqrt((lapSample - t) / lapSample);
             t += lap / lapSample;
         }
     }
