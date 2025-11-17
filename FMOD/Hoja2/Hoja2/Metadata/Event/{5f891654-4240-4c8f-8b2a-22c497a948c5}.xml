@@ -2,13 +2,13 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{5f891654-4240-4c8f-8b2a-22c497a948c5}">
 		<property name="name">
-			<value>Nested Event</value>
+			<value>Tormenta Ej1</value>
 		</property>
 		<property name="outputFormat">
 			<value>5</value>
 		</property>
 		<relationship name="folder">
-			<destination>{7b20481e-25cd-41f8-9222-e67ff5031216}</destination>
+			<destination>{013d3a5f-2945-4ed1-bc8a-2cc8c33d450b}</destination>
 		</relationship>
 		<relationship name="mixer">
 			<destination>{5046a67c-3398-4b67-8c44-b1361ce93632}</destination>
@@ -58,6 +58,9 @@
 		</relationship>
 		<relationship name="panner">
 			<destination>{c8313c1a-a19d-4048-9c2c-c47e077fc7c8}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{fc3fcb62-7e82-463e-b4c8-7279f6de7891}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6da175b0-dda2-4ece-bb5c-66f30fe1833b}" />
@@ -305,7 +308,7 @@
 	</object>
 	<object class="SoundScatterer" id="{34312504-813e-4f3c-84f4-48528e61b03b}">
 		<property name="polyphony">
-			<value>7</value>
+			<value>5</value>
 		</property>
 		<property name="soundStealing">
 			<value>3</value>
