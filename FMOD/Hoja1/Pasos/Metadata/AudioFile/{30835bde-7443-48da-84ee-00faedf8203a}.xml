@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{30835bde-7443-48da-84ee-00faedf8203a}">
+		<property name="assetPath">
+			<value>ambience/trueno2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>9.241541950113378</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e8ca00f-5343-4efd-afb1-579e13eaf0a2}</destination>
+		</relationship>
+	</object>
+</objects>

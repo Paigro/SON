@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d4955f1d-b692-407b-8f22-c2b817fd1ece}">
+		<property name="assetPath">
+			<value>ambience/bosque.ogg</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>97.77491666666667</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{7e8ca00f-5343-4efd-afb1-579e13eaf0a2}</destination>
+		</relationship>
+	</object>
+</objects>
