@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{ce82c6f3-c220-4d34-b891-1e9e22dff924}">
+		<property name="name">
+			<value>Personajes</value>
+		</property>
+		<relationship name="folder">
+			<destination>{58fb55f5-247f-437e-bf01-3b76496f8b49}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{691010fe-22f0-48b8-bc7b-c62e0a5e50f8}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{691010fe-22f0-48b8-bc7b-c62e0a5e50f8}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>19</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>MAITE</value>
+			<value>Juan_Marcos</value>
+			<value>Zacarias</value>
+			<value>Francisco</value>
+			<value>Jorge</value>
+			<value>Isaias</value>
+			<value>Magdalena</value>
+			<value>Dolores</value>
+			<value>Rosario</value>
+			<value>Anonimo1</value>
+			<value>Anonimo2</value>
+			<value>Sagrario</value>
+			<value>Encarna</value>
+			<value>Felipe</value>
+			<value>Gonzalo</value>
+			<value>Yesbeth</value>
+			<value>Martirio</value>
+			<value>Antonio</value>
+			<value>Rut</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

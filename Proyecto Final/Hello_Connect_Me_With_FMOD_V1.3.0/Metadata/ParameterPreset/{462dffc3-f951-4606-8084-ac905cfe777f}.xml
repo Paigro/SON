@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{462dffc3-f951-4606-8084-ac905cfe777f}">
+		<property name="name">
+			<value>Mirada</value>
+		</property>
+		<relationship name="folder">
+			<destination>{58fb55f5-247f-437e-bf01-3b76496f8b49}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{92603388-6a6d-4953-b17d-7373653edeaf}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{92603388-6a6d-4953-b17d-7373653edeaf}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Escritorio</value>
+			<value>Puerta</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

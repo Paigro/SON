@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="ParameterPreset" id="{6cd6d194-76da-4e73-a448-c106e3801795}">
+		<property name="name">
+			<value>Gente en sala</value>
+		</property>
+		<relationship name="folder">
+			<destination>{58fb55f5-247f-437e-bf01-3b76496f8b49}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{813d71de-4c66-44f2-9ddb-c783389fbd99}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{813d71de-4c66-44f2-9ddb-c783389fbd99}">
+		<property name="maximum">
+			<value>4</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

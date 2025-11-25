@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{5f891654-4240-4c8f-8b2a-22c497a948c5}">
 		<property name="name">
-			<value>Tormenta Ej1</value>
+			<value>Tormenta_Ej1</value>
 		</property>
 		<property name="outputFormat">
 			<value>5</value>
@@ -35,6 +35,9 @@
 		</relationship>
 		<relationship name="parameters">
 			<destination>{e3362998-2a53-4dc9-b0a2-42d2a81921a3}</destination>
+		</relationship>
+		<relationship name="banks">
+			<destination>{b0a7f0de-26b3-4c65-b08c-65953a2d6d5a}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixer" id="{5046a67c-3398-4b67-8c44-b1361ce93632}">
