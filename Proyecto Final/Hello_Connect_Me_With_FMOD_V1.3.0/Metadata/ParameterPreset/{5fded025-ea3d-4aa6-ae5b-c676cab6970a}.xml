@@ -26,7 +26,7 @@
 			<value>Tormenta</value>
 		</property>
 		<property name="initialValue">
-			<value>4</value>
+			<value>0</value>
 		</property>
 	</object>
 </objects>

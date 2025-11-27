@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>19</value>
+			<value>18</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>MAITE</value>
@@ -35,7 +35,6 @@
 			<value>Felipe</value>
 			<value>Gonzalo</value>
 			<value>Yesbeth</value>
-			<value>Martirio</value>
 			<value>Antonio</value>
 			<value>Rut</value>
 		</property>
