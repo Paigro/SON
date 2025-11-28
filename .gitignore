@@ -1,0 +1,15 @@
+# Ignorar carpetas generadas localmente por FMOD
+.cache/
+.user/
+.unsaved/
+.restore/
+
+# Ignorar logs de FMOD
+fmod.log
+fmod_editor.log
+
+# Ignorar bancos compilados si no quieres versionarlos
+Build/
+
+# Ignorar archivos temporales u otros artefactos
+*.tmp
