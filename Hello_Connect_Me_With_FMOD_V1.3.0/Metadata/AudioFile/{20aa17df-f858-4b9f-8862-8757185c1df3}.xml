@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{20aa17df-f858-4b9f-8862-8757185c1df3}">
 		<property name="assetPath">
-			<value>Assets/SON_Hello_Cup_ccj125.mp3</value>
+			<value>Assets/Ambiente/SON_Hello_Cup_ccj125.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>

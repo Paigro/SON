@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="DataFile" id="{faf4c050-d605-4eb4-9eb3-c311b9233225}">
+	<object class="EncodableAsset" id="{b1c4bf08-a7b3-45f8-89c3-f438cb9ed777}">
 		<property name="assetPath">
-			<value>Assets/SON_Hello_SquishyGoo_C0.m4a</value>
+			<value>Assets/Ambiente/</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>
