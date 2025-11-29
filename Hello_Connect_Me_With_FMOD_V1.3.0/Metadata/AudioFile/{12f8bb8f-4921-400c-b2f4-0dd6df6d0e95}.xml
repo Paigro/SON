@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{12f8bb8f-4921-400c-b2f4-0dd6df6d0e95}">
+		<property name="assetPath">
+			<value>Assets/Ambiente/SON_Hello_TVSounds_kb7clx.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>49.190612244897956</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>
+		</relationship>
+	</object>
+</objects>

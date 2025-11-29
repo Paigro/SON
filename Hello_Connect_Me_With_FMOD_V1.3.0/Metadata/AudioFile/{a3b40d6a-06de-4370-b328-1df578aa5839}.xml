@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{4b77cebb-4aed-47b0-9357-0048913d38ba}">
+	<object class="AudioFile" id="{a3b40d6a-06de-4370-b328-1df578aa5839}">
 		<property name="assetPath">
-			<value>Assets/Puerta/SON_Hello_HorrorTalk_2_C0.wav</value>
+			<value>Assets/Puerta/SON_Hello_SlowOneX32_C0.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
@@ -11,10 +11,10 @@
 			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>18.8181179138322</value>
+			<value>11.971179138321995</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>

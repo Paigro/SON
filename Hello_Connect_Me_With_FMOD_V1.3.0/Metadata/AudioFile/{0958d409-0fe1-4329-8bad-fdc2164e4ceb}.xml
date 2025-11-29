@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{ff4cc052-0963-4b12-af3e-dc38779c276a}">
+	<object class="AudioFile" id="{0958d409-0fe1-4329-8bad-fdc2164e4ceb}">
 		<property name="assetPath">
-			<value>Assets/Puerta/SON_Hello_SlowOneX16_C0.wav</value>
+			<value>Assets/Ambiente/SON_Hello_CreakingDoor_tomshuetz.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<property name="length">
-			<value>7.4000000000000004</value>
+			<value>8.3948072562358274</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>
