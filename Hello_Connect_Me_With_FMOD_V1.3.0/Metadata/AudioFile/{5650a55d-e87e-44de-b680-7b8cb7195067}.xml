@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{5650a55d-e87e-44de-b680-7b8cb7195067}">
 		<property name="assetPath">
-			<value>Assets/SFX/Clavijas/ConectaClavija.wav</value>
+			<value>Assets/SFX/Clavijas/Cheker.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{1b4ba31e-ba6a-496a-bad9-08e862008e46}">
+	<object class="AudioFile" id="{1ff977fc-e14f-45bb-98e0-adf89cfda52f}">
 		<property name="assetPath">
-			<value>Assets/SFX/Bombillas/BombillaMal.wav</value>
+			<value>Assets/SFX/Clavijas/CogerClavija2.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>
 		<property name="channelCount">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<property name="length">
-			<value>2.7035374149659863</value>
+			<value>0.22399092970521542</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>
