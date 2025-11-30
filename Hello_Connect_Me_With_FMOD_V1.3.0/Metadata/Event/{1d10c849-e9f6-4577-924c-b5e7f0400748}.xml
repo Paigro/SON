@@ -119,6 +119,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{60f1d92a-107e-40ed-b70b-a32b3a968c7c}">
+		<property name="isCutoff">
+			<value>true</value>
+		</property>
 		<property name="start">
 			<value>4</value>
 		</property>
