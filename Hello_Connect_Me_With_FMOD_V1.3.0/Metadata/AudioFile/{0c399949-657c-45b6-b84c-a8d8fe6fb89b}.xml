@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{a9f6cead-7ce5-420a-90ee-783112afde30}">
+	<object class="AudioFile" id="{0c399949-657c-45b6-b84c-a8d8fe6fb89b}">
 		<property name="assetPath">
-			<value>Assets/SFX/SwooshCascos.mp3</value>
+			<value>Assets/SFX/SwooshCascos.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>1.776</value>
+			<value>1.2881458333333333</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{59ebab25-bf4f-4297-b2f6-eea45200d4df}</destination>

@@ -5,7 +5,7 @@
 			<value>Transicion</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2426b630-de06-4542-982f-eaacc74b20f1}</destination>
@@ -86,9 +86,6 @@
 		<property name="playbackMode">
 			<value>1</value>
 		</property>
-		<relationship name="sounds">
-			<destination>{d5dc568c-c706-4c56-8591-f5532f79c87e}</destination>
-		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{fa3474c6-51a4-4b82-8e03-d2f2672ab5d8}">
 		<relationship name="effects">
@@ -103,11 +100,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{001a3f08-85ac-4d2c-99da-4b2ee302923a}" />
-	<object class="SingleSound" id="{d5dc568c-c706-4c56-8591-f5532f79c87e}">
-		<relationship name="audioFile">
-			<destination>{a9f6cead-7ce5-420a-90ee-783112afde30}</destination>
-		</relationship>
-	</object>
 	<object class="MixerBusFader" id="{285692da-3cee-409b-8a91-f478c3ffc48a}" />
 	<object class="MixerBusFader" id="{b4fb0826-51af-4c7c-85f4-2254b08a651a}" />
 	<object class="CompressorEffect" id="{61e35094-18f4-487b-abe8-1771e8c12c0d}">
