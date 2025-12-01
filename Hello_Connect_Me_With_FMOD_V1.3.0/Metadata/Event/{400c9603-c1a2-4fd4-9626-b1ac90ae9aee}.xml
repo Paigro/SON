@@ -5,7 +5,7 @@
 			<value>EliminarPapel</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2426b630-de06-4542-982f-eaacc74b20f1}</destination>
@@ -84,7 +84,7 @@
 	</object>
 	<object class="MultiSound" id="{d359c707-a69b-4a90-941d-3dbfe366953e}">
 		<relationship name="sounds">
-			<destination>{afc4b9c2-3ad3-4403-8669-6c370466a8dc}</destination>
+			<destination>{d6ec57f6-863c-4200-91c0-c748f214c2b0}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{a99f2327-de4a-4f84-821a-26f3ffae3745}">
@@ -101,12 +101,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f28047e7-d6d1-4b2c-ba0b-41342778155a}" />
-	<object class="SingleSound" id="{afc4b9c2-3ad3-4403-8669-6c370466a8dc}">
-		<relationship name="modulators">
-			<destination>{0a0b6f4d-6b4e-4302-8411-39adb1ae32f6}</destination>
-		</relationship>
+	<object class="SingleSound" id="{d6ec57f6-863c-4200-91c0-c748f214c2b0}">
 		<relationship name="audioFile">
-			<destination>{7927e6b2-d0cc-45ad-9914-9a009581b129}</destination>
+			<destination>{afc52a5c-9649-4a68-8351-57f86aed1751}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{c911e401-281b-47bc-95b1-a95cbaf1b3ac}" />
@@ -122,14 +119,6 @@
 		</property>
 		<property name="qualityA">
 			<value>0.225586206</value>
-		</property>
-	</object>
-	<object class="RandomizerModulator" id="{0a0b6f4d-6b4e-4302-8411-39adb1ae32f6}">
-		<property name="nameOfPropertyBeingModulated">
-			<value>pitch</value>
-		</property>
-		<property name="amount">
-			<value>15.5</value>
 		</property>
 	</object>
 </objects>
