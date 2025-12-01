@@ -114,6 +114,9 @@
 		<property name="name">
 			<value>Compas</value>
 		</property>
+		<property name="volume">
+			<value>-10</value>
+		</property>
 		<property name="polyphony">
 			<value>3</value>
 		</property>
