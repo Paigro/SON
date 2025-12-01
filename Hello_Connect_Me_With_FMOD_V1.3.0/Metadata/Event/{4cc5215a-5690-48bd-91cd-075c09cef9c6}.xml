@@ -96,6 +96,7 @@
 	<object class="MixerBusEffectChain" id="{3276717c-990c-4af7-a90b-9ee75c488556}">
 		<relationship name="effects">
 			<destination>{d22c113a-4faa-4a60-9b6d-8e2e060dac5c}</destination>
+			<destination>{719e4f12-2333-4172-8bf3-b3cc01228a34}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3e384751-2d18-475c-9aee-b5be3e113a4d}" />
@@ -109,6 +110,14 @@
 	</object>
 	<object class="MixerBusFader" id="{fc11d645-df96-496d-9264-311054a01120}" />
 	<object class="MixerBusFader" id="{d22c113a-4faa-4a60-9b6d-8e2e060dac5c}" />
+	<object class="CompressorEffect" id="{719e4f12-2333-4172-8bf3-b3cc01228a34}">
+		<property name="threshold">
+			<value>-28.5</value>
+		</property>
+		<property name="attackTime">
+			<value>8.60000038</value>
+		</property>
+	</object>
 	<object class="RandomizerModulator" id="{f61e6e53-ea2d-4fab-85b2-075684227ac2}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>
