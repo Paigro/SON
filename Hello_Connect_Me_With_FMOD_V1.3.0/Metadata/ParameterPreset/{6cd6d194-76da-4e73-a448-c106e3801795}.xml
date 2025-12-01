@@ -21,5 +21,8 @@
 		<property name="initialValue">
 			<value>0</value>
 		</property>
+		<property name="velocity">
+			<value>17</value>
+		</property>
 	</object>
 </objects>

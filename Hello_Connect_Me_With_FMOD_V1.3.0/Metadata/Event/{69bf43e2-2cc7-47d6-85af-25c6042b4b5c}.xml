@@ -197,7 +197,7 @@
 			<value>3</value>
 		</property>
 		<property name="minimumTimeBetweenSounds">
-			<value>1000</value>
+			<value>2000</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
 			<value>7000</value>
