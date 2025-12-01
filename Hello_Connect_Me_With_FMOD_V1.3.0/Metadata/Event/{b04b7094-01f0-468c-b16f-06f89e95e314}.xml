@@ -124,9 +124,6 @@
 		<property name="name">
 			<value>Compas</value>
 		</property>
-		<property name="volume">
-			<value>-10</value>
-		</property>
 		<property name="polyphony">
 			<value>3</value>
 		</property>
@@ -146,7 +143,7 @@
 			<value>8</value>
 		</property>
 		<property name="pitchRandomization">
-			<value>3</value>
+			<value>5</value>
 		</property>
 		<relationship name="automators">
 			<destination>{726ba6d9-489a-4519-8edc-e556e665c987}</destination>
@@ -266,7 +263,7 @@
 			<value>pitch</value>
 		</property>
 		<property name="amount">
-			<value>6.25</value>
+			<value>10.416666</value>
 		</property>
 	</object>
 	<object class="MultiSound" id="{59d7b145-2ecc-4f35-afda-8967b262eb35}">
