@@ -143,7 +143,7 @@
 			<value>5000</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
-			<value>9000</value>
+			<value>10000</value>
 		</property>
 		<property name="spawnRate">
 			<value>20</value>
@@ -175,10 +175,10 @@
 			<value>3</value>
 		</property>
 		<property name="minimumTimeBetweenSounds">
-			<value>8000</value>
+			<value>6000</value>
 		</property>
 		<property name="maximumTimeBetweenSounds">
-			<value>23500</value>
+			<value>10000</value>
 		</property>
 		<property name="maximumScatterDistance">
 			<value>10</value>
@@ -469,7 +469,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>5</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{db6b5fbd-39f5-4e81-b641-cdb40baf6962}">
